@@ -1,6 +1,6 @@
 import { Router, Request, Response } from 'express';
 import { hash } from 'bcryptjs';
-import prisma from '@Shared/infra/prisma/client';
+import prisma from '../../../shared/infra/prisma/client'; 
 
 const usersRoutes = Router();
 

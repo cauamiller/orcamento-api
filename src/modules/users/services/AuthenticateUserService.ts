@@ -1,4 +1,4 @@
-import prisma from '@Shared/infra/prisma/client';
+import prisma from '../../../shared/infra/prisma/client'; 
 import { compare } from 'bcryptjs';
 import { sign } from 'jsonwebtoken';
 

@@ -1,7 +1,7 @@
 import { Router } from 'express';
-import clientsRoutes from '@Modules/clients/controllers/clients.routes';
-import budgetsRoutes from '@Modules/budgets/controllers/budgets.routes';
-import authRoutes from '@Modules/users/controllers/auth.routes';
+import clientsRoutes from '../../../../modules/clients/controllers/clients.routes';
+import budgetsRoutes from '../../../../modules/budgets/controllers/budgets.routes'; 
+import authRoutes from '../../../../modules/users/controllers/auth.routes'; 
 
 const routes = Router();
 

@@ -1,7 +1,7 @@
 import { IBudgetsRepository } from './IBudgetsRepository';
 import { ICreateBudgetDTO } from '../dtos/ICreateBudgetDTO';
 import { Budget } from '@prisma/client';
-import prisma from '@Shared/infra/prisma/client';
+import prisma from '../../../shared/infra/prisma/client'; 
 
 export class BudgetsRepository implements IBudgetsRepository {
   async create(data: ICreateBudgetDTO): Promise<Budget> {

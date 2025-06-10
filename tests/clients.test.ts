@@ -1,6 +1,6 @@
 import request from 'supertest'
 import express from 'express'
-import clientsRoutes from '@Modules/clients/controllers/clients.routes' // ajuste o caminho
+import clientsRoutes from 'modules/clients/controllers/clients.routes'
 
 const app = express()
 app.use(express.json())

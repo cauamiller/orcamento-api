@@ -1,5 +1,5 @@
 import { Client } from '@prisma/client';
-import prisma from '@Shared/infra/prisma/client';
+import prisma from '../../../shared/infra/prisma/client'; 
 
 interface CreateClientDTO {
   name: string;

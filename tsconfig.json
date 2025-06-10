@@ -9,10 +9,6 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "baseUrl": "./src",
-    "paths": {
-      "@Modules/*": ["modules/*"],
-      "@Shared/*": ["shared/*"]
-    },
     "typeRoots": ["./node_modules/@types", "./src/@types"]
   }
 }

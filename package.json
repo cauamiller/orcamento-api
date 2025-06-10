@@ -6,7 +6,7 @@
     "dev": "ts-node-dev --respawn --transpile-only -r tsconfig-paths/register src/shared/infra/http/server.ts",
     "build": "tsc",
     "seed": "ts-node prisma/seed.ts",
-    "start": "node dist/shared/infra/http/server.js",
+    "start": "node dist/src/shared/infra/http/server.js",
     "test": "jest"
   },
   "keywords": [],
@@ -20,6 +20,7 @@
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
+    "module-alias": "^2.2.3",
     "pdfkit": "^0.17.1",
     "prisma": "^6.8.2",
     "reflect-metadata": "^0.2.2",
