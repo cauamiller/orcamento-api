@@ -1,0 +1,33 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model Client {
+  id      String   @id @default(uuid())
+  name    String
+  email   String
+  phone   String?
+  budgets Budget[]
+}
+
+model Budget {
+  id        String   @id @default(uuid())
+  clientId  String
+  client    Client   @relation(fields: [clientId], references: [id])
+  createdAt DateTime @default(now())
+  total     Float
+  items     Json     // Ex: [{ "description": "cimento", "quantity": 2, "price": 50 }]
+}
+
+model User {
+  id       String   @id @default(uuid())
+  name     String
+  email    String   @unique
+  password String
+  createdAt DateTime @default(now())
+}
